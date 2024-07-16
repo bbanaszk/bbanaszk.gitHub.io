@@ -7,4 +7,4 @@ date: 2024-07-15
 
 Description of the project, language used, and maybe some challenges faced during development. Include what design patterns were used for this project
 
-[Explore the Project on GitHub](url-to-your-project-folder-on-github)
+[Explore the Project on GitHub](https://github.com/bbanaszk/bbanaszk.gitHub.io/tree/workflow/RPG_bbanaszk)
