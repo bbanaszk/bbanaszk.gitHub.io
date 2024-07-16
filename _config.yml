@@ -1,9 +1,0 @@
-remote_theme: pages-themes/modernist@v0.2.0
-plugins:
-- jekyll-remote-theme
-# name: "Borys Banaszkiewicz"
-# school: "Arizona State University's Ira. A. Fulton School of Engineering"
-# program: "Software Engineering"
-# grade: "4.0 GPA"
-# bio: "I am a Senior working on getting my bachelors degree in Software Engineering with a 2025 Spring graduation plan. I am passionate about programming and love what I do, please review some of the projects that I have worked on to see more about what my skillset involves. Enjoy!"
-# linkedin: "www.linkedin.com/in/borys-banaszkiewicz-211989183"
