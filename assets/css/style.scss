@@ -1,0 +1,19 @@
+---
+---
+
+@import "{{ site.theme }}";
+
+.description p {
+  white-space: nowrap; /* Prevents the text from wrapping */
+  overflow: hidden; /* Ensures anything beyond the container's width is not shown */
+  text-overflow: ellipsis; /* Adds an ellipsis if the text overflows */
+}
+
+dd,dt {
+  display: inline;
+}
+
+dd::after {
+ content: "";
+ display: block;
+}
