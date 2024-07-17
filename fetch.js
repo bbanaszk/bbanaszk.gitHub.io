@@ -1,6 +1,6 @@
-const fs = require("fs");
+fs = require("fs");
 const https = require("https");
-const process = require("process");
+process = require("process");
 require("dotenv").config();
 
 const GITHUB_TOKEN = process.env.REACT_APP_GITHUB_TOKEN;
@@ -23,7 +23,7 @@ if (USE_GITHUB_DATA === "true") {
   }
 
   console.log(`Fetching profile data for ${GITHUB_USERNAME}`);
-  const data = JSON.stringify({
+  var data = JSON.stringify({
     query: `
 {
   user(login:"${GITHUB_USERNAME}") { 
@@ -95,7 +95,7 @@ if (USE_GITHUB_DATA === "true") {
   req.end();
 }
 
-if (MEDIUM_USERNAME && MEDIUM_USERNAME !== "") {
+if (MEDIUM_USERNAME !== "") {
   console.log(`Fetching Medium blogs data for ${MEDIUM_USERNAME}`);
   const options = {
     hostname: "api.rss2json.com",
