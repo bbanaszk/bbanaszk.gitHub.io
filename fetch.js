@@ -127,4 +127,6 @@ if (MEDIUM_USERNAME !== undefined) {
   });
 
   req.end();
+} else {
+  console.log("No Medium username provided, skipping fetching Medium blogs.");
 }
