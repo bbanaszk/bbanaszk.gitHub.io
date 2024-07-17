@@ -25,26 +25,18 @@ const greeting = {
   subTitle: emoji(
     "A passionate Software Engineering student at Arizona State Univeristy's Ira A. Fulton School of Engineering 🚀 having a proficiency in Python, Java, C, C++, and Swift, I enjoy tackling complex challenges efficiently and creatively."
   ),
-  resumeLink: "https://drive.google.com/file/d/17jDMVgLas5dsyS2YNU6ZdOyhml5LLauS/view?usp=sharing", // Set to empty to hide the button
+  resumeLink:
+    "https://drive.google.com/file/d/17jDMVgLas5dsyS2YNU6ZdOyhml5LLauS/view?usp=sharing", // Set to empty to hide the button
   displayGreeting: true // Set false to hide this section, defaults to true
 };
 
+const blogSection = {};
 
-const blogSection = {
+const talkSection = {};
 
-};
+const podcastSection = {};
 
-const talkSection = {
-
-};
-
-const podcastSection = {
-
-};
-
-const twitterDetails = {
-
-};
+const twitterDetails = {};
 
 // Social Media Links
 
@@ -59,17 +51,34 @@ const socialMediaLinks = {
 
 const skillsSection = {
   title: "What I do",
-  subTitle: "DRIVEN SOFTWARE ENGINEER WITH A PASSION FOR INNOVATION AND PROBLEM-SOLVING",
+  subTitle:
+    "DRIVEN SOFTWARE ENGINEER WITH A PASSION FOR INNOVATION AND PROBLEM-SOLVING",
   skills: [
-    emoji("⚡ Over 500 LeetCode problems solved, optimizing solutions until I outperform 99% of submissions"),
+    emoji(
+      "⚡ Over 500 LeetCode problems solved, optimizing solutions until I outperform 99% of submissions"
+    ),
     emoji("⚡ Skilled in Python, Java, Swift, C, and C++"),
-    emoji("⚡ Passionate about programming, with a deep understanding of software engineering principles"),
-    emoji("⚡ Developed multiple client/server applications using AWS as a remote server"),
-    emoji("⚡ Collaborated on a team using Scrum and GitHub to create a bus scheduling software"),
-    emoji("⚡ Adhering to best practices for GitHub repository standards, commit messages, and teamwork"),
-    emoji("⚡ Built multi-threaded client/server applications and a multi-threaded photo filter application"),
-    emoji("⚡ Completed 100 days of SwiftUI training, focusing on iOS development as a hobby"),
-    emoji("⚡ Proficient in data serialization with JSON and Protobuf protocols"),
+    emoji(
+      "⚡ Passionate about programming, with a deep understanding of software engineering principles"
+    ),
+    emoji(
+      "⚡ Developed multiple client/server applications using AWS as a remote server"
+    ),
+    emoji(
+      "⚡ Collaborated on a team using Scrum and GitHub to create a bus scheduling software"
+    ),
+    emoji(
+      "⚡ Adhering to best practices for GitHub repository standards, commit messages, and teamwork"
+    ),
+    emoji(
+      "⚡ Built multi-threaded client/server applications and a multi-threaded photo filter application"
+    ),
+    emoji(
+      "⚡ Completed 100 days of SwiftUI training, focusing on iOS development as a hobby"
+    ),
+    emoji(
+      "⚡ Proficient in data serialization with JSON and Protobuf protocols"
+    )
   ],
 
   /* Make Sure to include correct Font Awesome Classname to view your icon
@@ -118,7 +127,8 @@ const educationInfo = {
   display: true, // Set false to hide this section, defaults to true
   schools: [
     {
-      schoolName: "Arizona State University's Ira A. Fulton School of Engineering",
+      schoolName:
+        "Arizona State University's Ira A. Fulton School of Engineering",
       logo: require("./assets/images/asu.png"),
       subHeader: "Bachelors of Science in Software Engineering",
       duration: "January 2021 - May 2025",
@@ -143,8 +153,7 @@ const techStack = {
     {
       Stack: "Drive and dedication",
       progressPercentage: "60%"
-    },
-    
+    }
   ],
   displayCodersrank: true // Set true to display codersrank badges section need to changes your username in src/containers/skillProgress/skillProgress.js:17:62, defaults to false
 };
@@ -198,7 +207,8 @@ const bigProjects = {
   projects: [
     {
       projectName: "RPG_bbanaszk",
-      projectDesc: "This project showcases the implementation of 3 design patterns that work concurrently to stimulate an RPG game where the player progresses through a dungeon fighting enemies, collecting loot, leveling up, and more.",
+      projectDesc:
+        "This project showcases the implementation of 3 design patterns that work concurrently to stimulate an RPG game where the player progresses through a dungeon fighting enemies, collecting loot, leveling up, and more.",
       footerLink: [
         {
           name: "Visit Website",
@@ -209,7 +219,8 @@ const bigProjects = {
     },
     {
       projectName: "gRPC",
-      projectDesc: "This project is an implementation of a gRPC-based Distributed System. It features multiple client-side services such as management of hometown data (city name, student name), encryption/decryption of a string using Caesar Cipher or XOR Cipher encryption/decryption algorithms which can be chosen by the user at runtime, and bill payment operations.",
+      projectDesc:
+        "This project is an implementation of a gRPC-based Distributed System. It features multiple client-side services such as management of hometown data (city name, student name), encryption/decryption of a string using Caesar Cipher or XOR Cipher encryption/decryption algorithms which can be chosen by the user at runtime, and bill payment operations.",
       footerLink: [
         {
           name: "Visit Website",
@@ -220,7 +231,8 @@ const bigProjects = {
     },
     {
       projectName: "LoanService",
-      projectDesc: "This project implements a multi-threaded server-client system where multiple clients and nodes can connect simultaneously. Clients can view existing loans, request new loans, or pay back existing loans. Nodes authenticate and participate in loan approval processes. The server acts as a middle man by managing communication between client and nodes, ensuring loan requests are approved by a majority of nodes before proceeding. The system handles parallel voting among nodes for efficient decision-making and supports persistent data storage to maintain system integrity across restarts.",
+      projectDesc:
+        "This project implements a multi-threaded server-client system where multiple clients and nodes can connect simultaneously. Clients can view existing loans, request new loans, or pay back existing loans. Nodes authenticate and participate in loan approval processes. The server acts as a middle man by managing communication between client and nodes, ensuring loan requests are approved by a majority of nodes before proceeding. The system handles parallel voting among nodes for efficient decision-making and supports persistent data storage to maintain system integrity across restarts.",
       footerLink: [
         {
           name: "Visit Website",
@@ -231,7 +243,8 @@ const bigProjects = {
     },
     {
       projectName: "Multi-Threaded Filter",
-      projectDesc: "The project involves implementing a program to process BMP images by applying filters like blur and Swiss cheese effects using multithreading techniques. It focuses on breaking down image processing tasks into smaller units distributed across multiple threads for improved performance. Skills emphasized include image manipulation, parallel algorithm design with pthreads, and efficient file handling for reading and writing BMP files.",
+      projectDesc:
+        "The project involves implementing a program to process BMP images by applying filters like blur and Swiss cheese effects using multithreading techniques. It focuses on breaking down image processing tasks into smaller units distributed across multiple threads for improved performance. Skills emphasized include image manipulation, parallel algorithm design with pthreads, and efficient file handling for reading and writing BMP files.",
       footerLink: [
         {
           name: "Visit Website",
@@ -250,7 +263,8 @@ const personalProjects = {
   projects: [
     {
       projectName: "Chess",
-      projectDesc: "This game includes all check, checkmate, and stalemate logic. I also implemented captured pieces showing on either side of the board, the legal moves get displayed for whichever piece is currently selected, logic to undo a move all the way to beginning of the game, valid chess notation and a red glow behind opposing players pieces for any valid captures.",
+      projectDesc:
+        "This game includes all check, checkmate, and stalemate logic. I also implemented captured pieces showing on either side of the board, the legal moves get displayed for whichever piece is currently selected, logic to undo a move all the way to beginning of the game, valid chess notation and a red glow behind opposing players pieces for any valid captures.",
       footerLink: [
         {
           name: "Visit Website",
@@ -260,7 +274,8 @@ const personalProjects = {
     },
     {
       projectName: "Alien Invasion",
-      projectDesc: "This was my first programming project from 'Python Crash Course', and it is what started my programming journey. I gained proficiency in game development using Python and Pygame. This included creating interactive game elements, handling user inputs, and implementing game mechanics such as collision detection. These skills enhanced my understanding of Python programming and provided hands-on experience in developing interactive applications.",
+      projectDesc:
+        "This was my first programming project from 'Python Crash Course', and it is what started my programming journey. I gained proficiency in game development using Python and Pygame. This included creating interactive game elements, handling user inputs, and implementing game mechanics such as collision detection. These skills enhanced my understanding of Python programming and provided hands-on experience in developing interactive applications.",
       footerLink: [
         {
           name: "Visit Website",
@@ -271,7 +286,6 @@ const personalProjects = {
   ],
   display: true // Set false to hide this section, defaults to true
 };
-
 
 // Achievement Section
 // Include certificates, talks etc
@@ -303,7 +317,8 @@ const achievementSection = {
 const resumeSection = {
   title: "Resume",
   subtitle: "Feel free to download my resume",
-  resume: "https://drive.google.com/file/d/17jDMVgLas5dsyS2YNU6ZdOyhml5LLauS/view?usp=sharing",
+  resume:
+    "https://drive.google.com/file/d/17jDMVgLas5dsyS2YNU6ZdOyhml5LLauS/view?usp=sharing",
   // Please Provide with Your Podcast embeded Link
   display: true // Set false to hide this section, defaults to true
 };

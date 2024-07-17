@@ -23,25 +23,58 @@ export default function StartupProject() {
         {bigProjects.display && (
           <div>
             <h1 className="skills-heading">{bigProjects.title}</h1>
-            <p className={isDark ? "dark-mode project-subtitle" : "subTitle project-subtitle"}>
+            <p
+              className={
+                isDark
+                  ? "dark-mode project-subtitle"
+                  : "subTitle project-subtitle"
+              }
+            >
               {bigProjects.subtitle}
             </p>
 
             <div className="projects-container">
               {bigProjects.projects.map((project, i) => (
-                <div key={i} className={isDark ? "dark-mode project-card project-card-dark" : "project-card project-card-light"}>
+                <div
+                  key={i}
+                  className={
+                    isDark
+                      ? "dark-mode project-card project-card-dark"
+                      : "project-card project-card-light"
+                  }
+                >
                   {project.image && (
                     <div className="project-image">
-                      <img src={project.image} alt={project.projectName} className="card-image"></img>
+                      <img
+                        src={project.image}
+                        alt={project.projectName}
+                        className="card-image"
+                      ></img>
                     </div>
                   )}
                   <div className="project-detail">
-                    <h5 className={isDark ? "dark-mode card-title" : "card-title"}>{project.projectName}</h5>
-                    <p className={isDark ? "dark-mode card-subtitle" : "card-subtitle"}>{project.projectDesc}</p>
+                    <h5
+                      className={isDark ? "dark-mode card-title" : "card-title"}
+                    >
+                      {project.projectName}
+                    </h5>
+                    <p
+                      className={
+                        isDark ? "dark-mode card-subtitle" : "card-subtitle"
+                      }
+                    >
+                      {project.projectDesc}
+                    </p>
                     {project.footerLink && (
                       <div className="project-card-footer">
                         {project.footerLink.map((link, i) => (
-                          <span key={i} className={isDark ? "dark-mode project-tag" : "project-tag"} onClick={() => openUrlInNewTab(link.url)}>
+                          <span
+                            key={i}
+                            className={
+                              isDark ? "dark-mode project-tag" : "project-tag"
+                            }
+                            onClick={() => openUrlInNewTab(link.url)}
+                          >
                             {link.name}
                           </span>
                         ))}
@@ -57,25 +90,58 @@ export default function StartupProject() {
         {personalProjects.display && ( // Render the personal projects
           <div>
             <h1 className="skills-heading">{personalProjects.title}</h1>
-            <p className={isDark ? "dark-mode project-subtitle" : "subTitle project-subtitle"}>
+            <p
+              className={
+                isDark
+                  ? "dark-mode project-subtitle"
+                  : "subTitle project-subtitle"
+              }
+            >
               {personalProjects.subtitle}
             </p>
 
             <div className="projects-container">
               {personalProjects.projects.map((project, i) => (
-                <div key={i} className={isDark ? "dark-mode project-card project-card-dark" : "project-card project-card-light"}>
+                <div
+                  key={i}
+                  className={
+                    isDark
+                      ? "dark-mode project-card project-card-dark"
+                      : "project-card project-card-light"
+                  }
+                >
                   {project.image && (
                     <div className="project-image">
-                      <img src={project.image} alt={project.projectName} className="card-image"></img>
+                      <img
+                        src={project.image}
+                        alt={project.projectName}
+                        className="card-image"
+                      ></img>
                     </div>
                   )}
                   <div className="project-detail">
-                    <h5 className={isDark ? "dark-mode card-title" : "card-title"}>{project.projectName}</h5>
-                    <p className={isDark ? "dark-mode card-subtitle" : "card-subtitle"}>{project.projectDesc}</p>
+                    <h5
+                      className={isDark ? "dark-mode card-title" : "card-title"}
+                    >
+                      {project.projectName}
+                    </h5>
+                    <p
+                      className={
+                        isDark ? "dark-mode card-subtitle" : "card-subtitle"
+                      }
+                    >
+                      {project.projectDesc}
+                    </p>
                     {project.footerLink && (
                       <div className="project-card-footer">
                         {project.footerLink.map((link, i) => (
-                          <span key={i} className={isDark ? "dark-mode project-tag" : "project-tag"} onClick={() => openUrlInNewTab(link.url)}>
+                          <span
+                            key={i}
+                            className={
+                              isDark ? "dark-mode project-tag" : "project-tag"
+                            }
+                            onClick={() => openUrlInNewTab(link.url)}
+                          >
                             {link.name}
                           </span>
                         ))}
