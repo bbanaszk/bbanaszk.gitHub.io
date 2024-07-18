@@ -21,11 +21,11 @@ const illustration = {
 
 const greeting = {
   username: "Borys Banaszkiewicz",
-  title: "Hi all, I'm Borys Banaszkiewicz",
+  title: "Hi all, I'm Borys",
   subTitle: emoji(
     "A passionate Software Engineering student at Arizona State Univeristy's Ira A. Fulton School of Engineering 🚀 having a proficiency in Python, Java, C, C++, and Swift, I enjoy tackling complex challenges efficiently and creatively."
   ),
-  resumeLink: "https://drive.google.com/file/d/17jDMVgLas5dsyS2YNU6ZdOyhml5LLauS/view?usp=sharing", // Set to empty to hide the button
+  resumeLink: "https://drive.google.com/file/d/1qxmA0Hg7AfuYA4-139A77lXy4wV5MH-w/view?usp=share_link", // Set to empty to hide the button
   displayGreeting: true // Set false to hide this section, defaults to true
 };
 
@@ -51,7 +51,7 @@ const twitterDetails = {
 const socialMediaLinks = {
   github: "https://github.com/bbanaszk",
   linkedin: "https://www.linkedin.com/in/borys-banaszkiewicz-211989183",
-  gmail: "bbanaszk@asu.edu",
+  gmail: "borysbanaszk@gmail.com",
   display: true // Set true to display this section, defaults to false
 };
 
@@ -59,17 +59,14 @@ const socialMediaLinks = {
 
 const skillsSection = {
   title: "What I do",
-  subTitle: "DRIVEN SOFTWARE ENGINEER WITH A PASSION FOR INNOVATION AND PROBLEM-SOLVING",
+  subTitle: "Driven Software Engineer with a Passion for Innovation and Problem-Solving",
   skills: [
-    emoji("⚡ Over 500 LeetCode problems solved, optimizing solutions until I outperform 99% of submissions"),
-    emoji("⚡ Skilled in Python, Java, Swift, C, and C++"),
-    emoji("⚡ Passionate about programming, with a deep understanding of software engineering principles"),
-    emoji("⚡ Developed multiple client/server applications using AWS as a remote server"),
-    emoji("⚡ Collaborated on a team using Scrum and GitHub to create a bus scheduling software"),
-    emoji("⚡ Adhering to best practices for GitHub repository standards, commit messages, and teamwork"),
-    emoji("⚡ Built multi-threaded client/server applications and a multi-threaded photo filter application"),
-    emoji("⚡ Completed 100 days of SwiftUI training, focusing on iOS development as a hobby"),
-    emoji("⚡ Proficient in data serialization with JSON and Protobuf protocols"),
+    emoji("⚡ Refined critical thinking and algorithm skills by solving over 500 LeetCode problems, focusing on data structures and efficiency."),
+    emoji("⚡ Proficient in multiple programming languages including Python, Java, Swift, C, and C++"),
+    emoji("⚡ Actively participated in Scrum projects, utilizing Taiga for project management and GitHub for source control"),
+    emoji("⚡ Created several multi-threaded applications, ranging from client/server setups to image processing applications"),
+    emoji("⚡ Completed 100 days of SwiftUI course to expand my knowledge with iOS development"),
+    emoji("⚡ Proficient in data serialization using JSON and Protobuf (See gRPC project example for Protobuf)"),
   ],
 
   /* Make Sure to include correct Font Awesome Classname to view your icon
@@ -77,20 +74,20 @@ https://fontawesome.com/icons?d=gallery */
 
   softwareSkills: [
     {
-      skillName: "C",
-      fontAwesomeClassname: "fas fa-code"
-    },
-    {
       skillName: "Java",
       fontAwesomeClassname: "fab fa-java"
+    },
+    {
+      skillName: "python",
+      fontAwesomeClassname: "fab fa-python"
     },
     {
       skillName: "swift",
       fontAwesomeClassname: "fab fa-swift"
     },
     {
-      skillName: "gradle",
-      fontAwesomeClassname: "fas fa-tasks"
+      skillName: "C",
+      fontAwesomeClassname: "fas fa-code"
     },
     {
       skillName: "C++",
@@ -99,14 +96,6 @@ https://fontawesome.com/icons?d=gallery */
     {
       skillName: "aws",
       fontAwesomeClassname: "fab fa-aws"
-    },
-    {
-      skillName: "python",
-      fontAwesomeClassname: "fab fa-python"
-    },
-    {
-      skillName: "Microsoft Excel",
-      fontAwesomeClassname: "fab fa-windows"
     }
   ],
   display: true // Set false to hide this section, defaults to true
@@ -130,23 +119,23 @@ const educationInfo = {
 // Your top 3 proficient stacks/tech experience
 
 const techStack = {
-  viewSkillBars: true, //Set it to true to show Proficiency Section
+  viewSkillBars: false, //Set it to true to show Proficiency Section
   experience: [
     {
-      Stack: "Programming and technical skills",
-      progressPercentage: "90%"
+      Stack: "Java, Python",
+      progressPercentage: "85%"
     },
     {
-      Stack: "Entrepreneurial skills", //Insert stack or technology you have experience in
-      progressPercentage: "75%" //Insert relative proficiency in percentage
+      Stack: "C, C++, Swift", //Insert stack or technology you have experience in
+      progressPercentage: "60%" //Insert relative proficiency in percentage
     },
     {
-      Stack: "Drive and dedication",
-      progressPercentage: "60%"
+      Stack: "JavaScript, C#",
+      progressPercentage: "50%"
     },
     
   ],
-  displayCodersrank: true // Set true to display codersrank badges section need to changes your username in src/containers/skillProgress/skillProgress.js:17:62, defaults to false
+  displayCodersrank: false // Set true to display codersrank badges section need to changes your username in src/containers/skillProgress/skillProgress.js:17:62, defaults to false
 };
 
 // Work experience section
@@ -193,23 +182,43 @@ const openSource = {
 // Some big projects you have worked on
 
 const bigProjects = {
-  title: "School Projects",
-  subtitle: "Here are some projects I have worked on in my degree",
+  title: "My Projects",
   projects: [
-    {
-      projectName: "RPG_bbanaszk",
-      projectDesc: "This project showcases the implementation of 3 design patterns that work concurrently to stimulate an RPG game where the player progresses through a dungeon fighting enemies, collecting loot, leveling up, and more.",
+     {
+      projectName: "Parallel Image Filtering",
+      projectDesc: "Implemented a parallel processing application to apply blur and Swiss cheese filters on BMP images. This project utilizes efficient multi-threading techniques to enhance image processing performance, with the flexibility to adjust the number of threads dynamically to optimize workload distribution.",
       footerLink: [
         {
           name: "Visit Website",
-          url: "https://github.com/bbanaszk/RPG_bbanaszk"
+          url: "https://github.com/beastlyx/Multi-Threaded-filter.git"
+        }
+        //  you can add extra buttons here.
+      ]
+    },
+    {
+      projectName: "Chess",
+      projectDesc: "A comprehensive chess game featuring complete gameplay logic including castling, en passant, check, checkmate, and stalemate. Some features include visual indicators for legal moves and legal captures, full undo functionality, and accurate chess notation to manage game state.",
+      footerLink: [
+        {
+          name: "Visit Website",
+          url: "https://github.com/beastlyx/Chess.git"
+        }
+      ]
+    },
+    {
+      projectName: "RPG",
+      projectDesc: "This project showcases the implementation of 3 design patterns that work concurrently to stimulate an RPG game, enhancing gameplay through tactical enemy encounters, loot collection, and player progression in a dungeon environment.",
+      footerLink: [
+        {
+          name: "Visit Website",
+          url: "https://github.com/beastlyx/RPG"
         }
         //  you can add extra buttons here.
       ]
     },
     {
       projectName: "gRPC",
-      projectDesc: "This project is an implementation of a gRPC-based Distributed System. It features multiple client-side services such as management of hometown data (city name, student name), encryption/decryption of a string using Caesar Cipher or XOR Cipher encryption/decryption algorithms which can be chosen by the user at runtime, and bill payment operations.",
+      projectDesc: "This project is an implementation of a Distributed System using gRPC. It features multiple client-side services such as management of hometown data (city name, student name), Caesar and XOR Cipher encryption/decryption algorithms which can be chosen by the user at runtime, and bill payment services.",
       footerLink: [
         {
           name: "Visit Website",
@@ -220,22 +229,11 @@ const bigProjects = {
     },
     {
       projectName: "LoanService",
-      projectDesc: "This project implements a multi-threaded server-client system where multiple clients and nodes can connect simultaneously. Clients can view existing loans, request new loans, or pay back existing loans. Nodes authenticate and participate in loan approval processes. The server acts as a middle man by managing communication between client and nodes, ensuring loan requests are approved by a majority of nodes before proceeding. The system handles parallel voting among nodes for efficient decision-making and supports persistent data storage to maintain system integrity across restarts.",
+      projectDesc: "Developed a multi-threaded server-client system enabling simultaneous connections for loan management. This system allows clients to manage loans and nodes to handle approvals, with the server coordinating communication to ensure consensus among nodes for loan decisions.",
       footerLink: [
         {
           name: "Visit Website",
           url: "https://github.com/beastlyx/LoanService.git"
-        }
-        //  you can add extra buttons here.
-      ]
-    },
-    {
-      projectName: "Multi-Threaded Filter",
-      projectDesc: "The project involves implementing a program to process BMP images by applying filters like blur and Swiss cheese effects using multithreading techniques. It focuses on breaking down image processing tasks into smaller units distributed across multiple threads for improved performance. Skills emphasized include image manipulation, parallel algorithm design with pthreads, and efficient file handling for reading and writing BMP files.",
-      footerLink: [
-        {
-          name: "Visit Website",
-          url: "https://github.com/beastlyx/Multi-Threaded-filter.git"
         }
         //  you can add extra buttons here.
       ]
@@ -250,7 +248,7 @@ const personalProjects = {
   projects: [
     {
       projectName: "Chess",
-      projectDesc: "This game includes all check, checkmate, and stalemate logic. I also implemented captured pieces showing on either side of the board, the legal moves get displayed for whichever piece is currently selected, logic to undo a move all the way to beginning of the game, valid chess notation and a red glow behind opposing players pieces for any valid captures.",
+      projectDesc: "A comprehensive chess application featuring complete gameplay logic including castling, en passant, check, checkmate, and stalemate. Enhancements include display of captured pieces, visual indicators for legal moves and captures, full undo functionality, accurate chess notation, and intuitive visual feedback through a red glow for valid captures.",
       footerLink: [
         {
           name: "Visit Website",
@@ -269,7 +267,7 @@ const personalProjects = {
       ]
     }
   ],
-  display: true // Set false to hide this section, defaults to true
+  display: false // Set false to hide this section, defaults to true
 };
 
 
@@ -303,7 +301,7 @@ const achievementSection = {
 const resumeSection = {
   title: "Resume",
   subtitle: "Feel free to download my resume",
-  resume: "https://drive.google.com/file/d/17jDMVgLas5dsyS2YNU6ZdOyhml5LLauS/view?usp=sharing",
+  resume: "https://drive.google.com/file/d/1qxmA0Hg7AfuYA4-139A77lXy4wV5MH-w/view?usp=share_link",
   // Please Provide with Your Podcast embeded Link
   display: true // Set false to hide this section, defaults to true
 };
@@ -312,8 +310,7 @@ const contactInfo = {
   title: emoji("Contact Me ☎️"),
   subtitle:
     "Discuss a project or just want to say hi? My Inbox is open for all.",
-  number: "+1 (630)-397-8092",
-  email_address: "bbanaszk@asu.edu"
+  email_address: "borysbanaszk@gmail.com"
 };
 
 const isHireable = true; // Set false if you are not looking for a job. Also isHireable will be display as Open for opportunities: Yes/No in the GitHub footer
