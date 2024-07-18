@@ -29,22 +29,13 @@ const greeting = {
   displayGreeting: true // Set false to hide this section, defaults to true
 };
 
+const blogSection = {};
 
-const blogSection = {
+const talkSection = {};
 
-};
+const podcastSection = {};
 
-const talkSection = {
-
-};
-
-const podcastSection = {
-
-};
-
-const twitterDetails = {
-
-};
+const twitterDetails = {};
 
 // Social Media Links
 
@@ -66,7 +57,7 @@ const skillsSection = {
     emoji("⚡ Actively participated in Scrum projects, utilizing Taiga for project management and GitHub for source control"),
     emoji("⚡ Created several multi-threaded applications, ranging from client/server setups to image processing applications"),
     emoji("⚡ Completed 100 days of SwiftUI course to expand my knowledge with iOS development"),
-    emoji("⚡ Proficient in data serialization using JSON and Protobuf (See gRPC project example for Protobuf)"),
+    emoji("⚡ Proficient in data serialization using JSON and Protobuf (See gRPC project example for Protobuf)")
   ],
 
   /* Make Sure to include correct Font Awesome Classname to view your icon
@@ -107,7 +98,8 @@ const educationInfo = {
   display: true, // Set false to hide this section, defaults to true
   schools: [
     {
-      schoolName: "Arizona State University's Ira A. Fulton School of Engineering",
+      schoolName:
+        "Arizona State University's Ira A. Fulton School of Engineering",
       logo: require("./assets/images/asu.png"),
       subHeader: "Bachelors of Science in Software Engineering",
       duration: "January 2021 - May 2025",
@@ -133,7 +125,6 @@ const techStack = {
       Stack: "JavaScript, C#",
       progressPercentage: "50%"
     },
-    
   ],
   displayCodersrank: false // Set true to display codersrank badges section need to changes your username in src/containers/skillProgress/skillProgress.js:17:62, defaults to false
 };
@@ -196,6 +187,7 @@ const bigProjects = {
       ]
     },
     {
+
       projectName: "Chess",
       projectDesc: "A comprehensive chess game featuring complete gameplay logic including castling, en passant, check, checkmate, and stalemate. Some features include visual indicators for legal moves and legal captures, full undo functionality, and accurate chess notation to manage game state.",
       footerLink: [
@@ -217,6 +209,7 @@ const bigProjects = {
       ]
     },
     {
+
       projectName: "gRPC",
       projectDesc: "This project is an implementation of a Distributed System using gRPC. It features multiple client-side services such as management of hometown data (city name, student name), Caesar and XOR Cipher encryption/decryption algorithms which can be chosen by the user at runtime, and bill payment services.",
       footerLink: [
@@ -258,7 +251,8 @@ const personalProjects = {
     },
     {
       projectName: "Alien Invasion",
-      projectDesc: "This was my first programming project from 'Python Crash Course', and it is what started my programming journey. I gained proficiency in game development using Python and Pygame. This included creating interactive game elements, handling user inputs, and implementing game mechanics such as collision detection. These skills enhanced my understanding of Python programming and provided hands-on experience in developing interactive applications.",
+      projectDesc:
+        "This was my first programming project from 'Python Crash Course', and it is what started my programming journey. I gained proficiency in game development using Python and Pygame. This included creating interactive game elements, handling user inputs, and implementing game mechanics such as collision detection. These skills enhanced my understanding of Python programming and provided hands-on experience in developing interactive applications.",
       footerLink: [
         {
           name: "Visit Website",
@@ -269,7 +263,6 @@ const personalProjects = {
   ],
   display: false // Set false to hide this section, defaults to true
 };
-
 
 // Achievement Section
 // Include certificates, talks etc
